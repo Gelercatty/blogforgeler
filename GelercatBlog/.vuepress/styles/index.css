@@ -1,0 +1,6 @@
+@import url('@vuepress-reco/tailwindcss-config/lib/client/styles/tailwindcss-base.css');
+
+
+.navvar-container {
+  @apply bg-blue-500;
+}
