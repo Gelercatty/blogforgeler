@@ -36,7 +36,9 @@ cout << "Hello World" << endl;
 
 # 图片
 ![图片名称](http://www.baidu.com)
-
+<pre>
+![图片名称](http://www.baidu.com)
+</pre>
 # 表格
 | 表头1 | 表头2 |
 |-------|-------|
