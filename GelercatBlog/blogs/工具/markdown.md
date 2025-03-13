@@ -48,7 +48,7 @@ cout << "Hello World" << endl;
 # 图片
 <p> ![图片名称](head.png) </p>
 
-![图片名称](head.png)
+![图片名称](/head.png)
 
 # 表格
 | 表头1 | 表头2 |
