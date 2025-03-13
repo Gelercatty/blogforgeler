@@ -18,7 +18,7 @@ export default defineUserConfig({
     lastUpdatedText: "",
     colorModeSwitch: true,
     primaryColor: "#8285C7",
-    autoSetBlogCategories: true,
+    // autoSetBlogCategories: true,
     // series 为原 sidebar
     series: {
       "/docs/theme-reco/": [

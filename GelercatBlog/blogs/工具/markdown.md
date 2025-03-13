@@ -3,8 +3,8 @@ title: MD语法备忘
 date: 2025/3/11
 tags:
  - MarkDown
-# categories:
-#  - category2
+categories:
+ - 语法
 ---
 # MD语法备忘
 # 一级标题
@@ -24,6 +24,15 @@ tags:
 > 引用内容
 
 # 代码块
+<pre>
+```python
+print("Hello World")
+```
+```cpp
+cout << "Hello World" << endl;
+```
+</pre>
+
 ```python
 print("Hello World")
 ```
@@ -32,13 +41,15 @@ cout << "Hello World" << endl;
 ```
 
 # 链接
+<pre>[链接名称](http://www.baidu.com)</pre>
+
 [链接名称](http://www.baidu.com)
 
 # 图片
-![图片名称](http://www.baidu.com)
-<pre>
-![图片名称](http://www.baidu.com)
-</pre>
+<p> ![图片名称](head.png) </p>
+
+![图片名称](head.png)
+
 # 表格
 | 表头1 | 表头2 |
 |-------|-------|
