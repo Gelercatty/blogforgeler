@@ -1,6 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 import { viteBundler } from '@vuepress/bundler-vite'
+import markdownItKatex from "markdown-it-katex";
 import { webpackBundler } from '@vuepress/bundler-webpack'
 
 export default defineUserConfig({
@@ -35,11 +36,11 @@ export default defineUserConfig({
     navbar: [
       { text: "Home", link: "/" },
       { text: "Blogs", link: "/posts.html" },
-      { text: "TimeLine", link: "/timeline.html",},
-      { text: "Categories", link: "/categories/gongju/1.html" },
+      { text: "TimeLine", link: "/timeline.html", },
+      { text: "Categories", link: "/categories/yufa/1.html" },
       { text: "Tags", link: "/tags/MarkDown/1.html" },
-      
-      
+
+
       // {
       //   text: "Docs",
       //   children: [
@@ -115,6 +116,30 @@ export default defineUserConfig({
     //     // hideComments: true // 隐藏评论
     //   },
     // },
+
+
   }),
   // debug: true,
+  extendsMarkdown: (md) => {
+    md.use(markdownItKatex);
+  },
+
+  head: [
+    // something else ...
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css",
+      },
+    ],
+  ],
 });
+
+[
+  "link",
+  {
+    rel: "stylesheet",
+    href: "https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css",
+  },
+];
